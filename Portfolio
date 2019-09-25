@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CV</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+	    <a class="navbar-brand" href="#"></a>
+
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+	            <i class="fas fa-bars fa-lg"></i>
+	    </button>
+	    
+	    <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
+	        <ul class="nav nav-tabs navbar-nav">
+	            <li class="nav-item"><a class="nav-link" href="#about">Moi</a></li>
+	            <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+	            <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
+	            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+	            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+	            <li class="nav-item"><a class="nav-link" href="#citations">Citations</a></li>
+	            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+	        </ul>
+	    </div>
+	</nav>
+	
+	<section id="about" class="container-fluid">
+		<div class="col-xs-8 col-md-4 profile-picture">
+			<img src="images/me.jpg" alt="Benjamin" class="rounded-circle" width="350px">
+		</div>
+		<div class="heading heading-top">
+			<h1>Hello, moi c'est Benjamin</h1>
+			<h3>En Recherche de formation<br>Développeur Web</h3>
+			<a href="docs/CV.pdf" target="_blank" class="btn1">Télécharger CV</a>
+		</div>
+	</section>
+
+	<hr>
+
+	<section id="skills">
+		<div class="red-divider"></div>
+		<div class="heading">
+			<h2>Compétences</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 bte-skills">
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-danger progress-bar-animated pt-2" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"><h5>HTML 75%</h5></div>
+					</div>
+
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-danger progress-bar-animated pt-2" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"><h5>CSS 75%</h5></div>
+					</div>
+
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-danger progress-bar-animated pt-2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><h5>JAVASCRIPT 60%</h5></div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-danger progress-bar-animated pt-2" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"><h5>JQUERY 55%</h5></div>
+					</div>
+
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-danger progress-bar-animated pt-2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"><h5>BOOTSTRAP 70%</h5></div>
+					</div>
+
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-danger progress-bar-animated pt-2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"><h5>PHP 50%</h5></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+
+	<hr>
+
+	<section id="experience">
+		<div class="container">
+			<div class="white-divider"></div>
+			<div class="heading">
+				<h2>Expérience Professionnelle</h2>
+			</div>
+			<ul class="timeline">
+				<li>
+					<div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+					<div class="timeline-panel-container">
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h3>Création de mon portfolio CV</h3>
+								<h4>web developpement</h4>
+								<p class="text-muted"><small class="fas fa-clock"></small> Septembre 2019</p>
+							</div>
+							<div class="timeline-body">
+								<p>création de page HTML/CSS responssiv</p>
+								<p>Utilisation du framework Boostrap, SlReveal</p>
+								<p>Mise en ligne de mon portfolio CV</p>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+					<div class="timeline-panel-container-inverted">
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h3>Créations de sites vitrines</h3>
+								<h4>web developpement</h4>
+								<p class="text-muted"><small class="fas fa-clock"></small> Juin 2019</p>
+							</div>
+							<div class="timeline-body">
+								<p>Utilisations de HTML/CSS , Boostrap ou Bulma</p>
+								<p>Javascript, Data bases, PHP MySQL, Symfony</p>			
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+					<div class="timeline-panel-container">
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h3>Avant la programmation</h3>
+								<h4>Plus de détails sur mon <a href="docs/CV.pdf" data-toggle="tooltip" title="Voir le CV" data-placement="right" target="_blank" class="btn2">CV</a></h4>
+								<p class="text-muted"><small class="fas fa-clock"></small> 2011-2018</p>
+							</div>
+							<div class="timeline-body">
+								<p>Grande distribution chez Lidl</p>
+								<p>Restaurations en saisonnier et à mon compte</p>
+								<p>CAP coiffure et un an de salariat en tant qu'employé</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<hr>
+
+	<section id="education">
+		<div class="red-divider"></div>
+		<div class="heading">
+			<h2>Education</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 educ">
+					<div class="education-block">
+						<h5>2019</h5>
+						<span class="fas fa-graduation-cap"></span>
+						<h3>Udemy.com</h3>
+						<h4>Formation online "Web Développeur Bootcamp"</h4>
+						<p class="italic">Colt Steele</p>
+						<div class="red-divider"></div>
+						<p class="italic">HTML/CSS, NodeJS, Express, MongoDB, Semantic UI</p>
+					</div>
+				</div>
+				<div class="col-sm-6 educ">
+					<div class="education-block">
+						<h5>2019</h5>
+						<span class="fas fa-graduation-cap"></span>
+						<h3>Apprendre-a-coder.com</h3>
+						<h4>Formation online "Développeur Web Complète"</h4>
+						<p class="italic">John Codeur</p>
+						<div class="red-divider"></div>
+						<p class="italic">HTML/CSS, Javascript, JQuery, Boostrap, PHP, MySQL</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section id="portfolio">
+
+	    <div class="container">
+	        <div class="white-divider"></div>
+	        <div class="heading">
+	            <h2>Portfolio</h2>
+	        </div>
+	        <div class="row">
+
+	            <div class="col-md-4 mb-3 projet">
+	                <a style="cursor: pointer;">
+	                    <img class="img-thumbnail" src="images/kine.PNG" alt="kinésiologie site">
+	                </a>
+	            </div>
+	             <div class="col-md-4 mb-3 projet">
+	                <a href="https://bensnakejs.000webhostapp.com">
+	                    <img class="img-thumbnail" src="images/snake.PNG" alt="snake site">
+	                </a>
+	            </div>
+	             <div class="col-md-4 mb-3 projet">
+	                <a style="cursor: pointer;">
+	                    <img class="img-thumbnail" src="images/actrices.PNG" alt="actrices site">
+	                </a>
+	            </div>
+
+	        </div>
+
+	         <div class="row">
+
+	            <div class="col-md-4 mb-3 projet">
+	                <a style="cursor: pointer;">
+	                    <img class="img-thumbnail" 
+	                   src="images/travel.PNG" alt="travel site">
+	                </a>
+	            </div>
+	             <div class="col-md-4 mb-3 projet">
+	             	<a href="https://www.linkedin.com/in/benjamin-fichot-aa5098164/" target="_blank">
+	             	    <img class="img-thumbnail" src="images/linkedIn.PNG" alt="LinkedIn">
+	             	</a>	                
+	            </div>
+	             <div class="col-md-4 mb-3 projet">
+	                <a href="https://www.facebook.com/benjamin.fichot.90?epa=SEARCH_BOX">
+	                    <img class="img-thumbnail" src="images/facebook-share.png" alt="kinésiologie site">
+	                </a>
+	            </div>
+
+	        </div>	    
+	    </div>
+	    
+	</section>
+
+	<hr>
+
+	<section id="citations">
+		<div class="container">
+			<div class="red-divider"></div>
+			<div class="heading">
+				<h2>Citations</h2>
+			</div>
+			<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<h3>"La meilleure façon de prédire l’avenir est de le créer."</h3>
+						<h4>Peter Drucker, <em>auteur et théoricien.</em></h4>
+					</div>
+					<div class="carousel-item">
+						<h3>"Je ne perds jamais. Soit je gagne, soit j’apprends."</h3>
+						<h4>Nelson Mandela, <em>prix nobel de la paix.</em></h4>
+					</div>
+					<div class="carousel-item">
+						<h3>"Vous ne trouverez jamais ce que vous ne cherchez pas."</h3>
+						<h4>Confucius, <em>premier « éducateur » de la Chine.</em></h4>
+					</div>
+					<div class="carousel-item">
+						<h3>"Ne craignez pas la perfection, vous n’y parviendrez jamais."</h3>
+						<h4>Salvador Dali, <em>artiste peintre.</em></h4>
+					</div>
+				</div>
+				<a href="#myCarousel" class="carousel-control-prev" data-slide="prev" role="button"><span class="fas fa-chevron-left fa-2x"></span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" data-slide="next" role="button">
+				    <span class="fas fa-chevron-right fa-2x"></span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section id="contact">
+		
+		<div class="container">
+		     <div class="white-divider"></div>
+		     <div class="heading">
+		         <h2>Contact</h2>
+		     </div>
+		         
+		    <div class="row">
+		        <div class="col-lg-10 col-lg-offset-1">
+		             <form id="contact-form" method="post" action="" role="form">
+		                 <div class="row">
+		                     <div class="col-md-6 form-box">
+		                         <label for="firstname">Prénom <span class="white">*</span></label>
+		                         <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+		                         <p class="comments"></p>
+		                     </div>
+		                     <div class="col-md-6 form-box">
+		                         <label for="name">Nom <span class="white">*</span></label>
+		                         <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+		                         <p class="comments"></p>
+		                     </div>
+		                     <div class="col-md-6 form-box">
+		                         <label for="email">Email <span class="white">*</span></label>
+		                         <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+		                         <p class="comments"></p>
+		                     </div>
+		                     <div class="col-md-6 form-box">
+		                         <label for="phone">Téléphone</label>
+		                         <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+		                         <p class="comments"></p>
+		                     </div>
+		                     <div class="col-md-12 form-box">
+		                         <label for="message">Message <span class="white">*</span></label>
+		                         <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="4"></textarea>
+		                         <p class="comments"></p>
+		                     </div>
+		                     <div class="col-md-12 form-box">
+		                         <p class="blue"><strong class="white">* Ces informations sont requises.</strong></p>
+		                     </div>
+		                     <div class="col-md-12 form-box">
+		                         <input type="submit" class="btn1" value="Envoyer">
+		                     </div>    
+		                 </div>
+		             </form>
+		         </div>
+		    </div>
+		 </div>
+
+	</section>
+
+	<footer class="text-center">
+		<a href="#about">
+			<span class="fas fa-chevron-up"></span>
+		</a>
+		<h5>© Fichot Benjamin | ~ 2019-2020 ~</h5>
+	</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src = "https://unpkg.com/scrollreveal"> </script>
+<script src="js/main.js"></script>
+</html>
