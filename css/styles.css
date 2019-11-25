@@ -27,6 +27,7 @@ section .heading {
 
 section .heading h2 {
 	text-transform: uppercase;
+	padding-top: 15px;
 }
 
 ul,ol {
@@ -77,16 +78,31 @@ ul,ol {
     border-bottom: 1px solid #fff;
     letter-spacing: 4px;
     text-transform: uppercase;
-    font-weight: bold;
+	font-weight: bold;
+	padding: 15px 0 0 0;
 }
+
+.nav-tabs {
+	border-bottom: none;
+}
+
 .nav-tabs .nav-link{
     color: #fff !important;
     text-align: center;
 }
-.nav-tabs .nav-link.active,  .nav-tabs .nav-link:hover{
-    color: #d82c2e !important;
-    background-color: #fff !important;
+
+.nav-tabs .nav-item:nth-child(even) .nav-link.active, .nav-tabs .nav-item:nth-child(even) .nav-link:hover{
+	color: #d82c2e !important;
+	background-color: #fff !important;
+	border-bottom: 1px solid #fff;
 }
+
+.nav-tabs .nav-item:nth-child(odd) .nav-link.active, .nav-tabs .nav-item:nth-child(odd) .nav-link:hover{
+	color: #fff !important;
+	background-color: #dc4143 !important;
+	border-bottom: 1px solid #dc4143;
+}
+
 .navbar-toggler{
     color: #fff !important;
     border-style: none;
@@ -270,6 +286,39 @@ ul,ol {
 .timeline-heading h4 {
 	color: #dc4143;
 	font-size: 17px;
+}
+
+@media screen and (max-width: 700px) {
+	.timeline-panel-container, .timeline-panel-container-inverted {
+		width: 100%;
+		margin: 30px 0 25px;
+	}
+	.timeline-panel-container-inverted .timeline-panel {
+		float: inherit;
+	}
+
+	.timeline-panel-container .timeline-panel:after {
+		top: -20px;
+		right: 50%;
+		left: 52%;
+		transform: rotateZ(270deg);
+	}
+
+	.timeline-panel-container-inverted .timeline-panel:after {
+		top: -20px;
+		right: 50%;
+		left: 52%;
+		transform: rotateZ(90deg);
+	}
+
+	.timeline-panel {
+		border-top: 4px solid #444;
+	}
+
+	.timeline li .timeline-badge {
+		top: -29px;
+		z-index: 999;
+	}
 }
 
 @media (max-width: 490px) {
