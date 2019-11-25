@@ -561,11 +561,55 @@ footer span {
 	font-size: 25px;
 	margin: 20px;
 	color: #dc4143;
-	height: 30px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	padding: 1rem;
+	box-shadow: 0 0 8px #00000091;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	background-color: #333;
+	transition: all linear 0.3s;
 }
 
 footer span:hover {
-	font-size: 28px;
+	font-size: 35px;
+	transform: rotateZ(180deg);
+	transition: all linear 0.3s;
+}
+
+@keyframes cercle1 {
+	0% {background-color: #9e9898;}
+	50% {background-color: #333;}
+	100% {background-color: #ccc;}
+}
+
+.firstRond {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #9e9898;
+	margin: 15px auto;
+	position: relative;
+	top: 10px;
+	animation: cercle1 2s linear infinite alternate-reverse;
+}
+
+@keyframes cercle2 {
+	0% {background-color: #333;}
+	50% {background-color: #ccc;}
+	100% {background-color: #9e9898;}
+}
+
+.secRond {
+	width: 100px;
+	height: 100px;
+	margin: 20px auto;
+	border-radius: 50%;
+	background-color: #ccc;
+	position: relative;
+	animation: cercle2 2s linear infinite alternate-reverse;
 }
 
 footer h5 {
