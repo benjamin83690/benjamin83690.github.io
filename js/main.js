@@ -1,3 +1,10 @@
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $("#mainNav");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    });
+});
+
 $(function(){
 
     $(".navbar a, footer a").on("click", function(event){
