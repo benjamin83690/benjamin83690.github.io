@@ -328,14 +328,30 @@ ul,ol {
   }
   .timeline-heading h3 {
   	font-size: 19px;
-  }
+  }	
+
 }
 
 @media (max-width: 410px) {
   .timeline-panel {
     width: 100%;
-    font-size: 12px;
+	font-size: 12px;
+	float: none;
+	margin-right: 0;
   }
+	.timeline-panel-container .timeline-panel:after {
+		top: -20px;
+		right: 50%;
+		left: 48%;
+		transform: rotateZ(270deg);
+	}
+
+	.timeline-panel-container-inverted .timeline-panel:after {
+		top: -20px;
+		right: 50%;
+		left: 48%;
+		transform: rotateZ(90deg);
+	}
 }
 
 /*------- EDUCATION -----*/
