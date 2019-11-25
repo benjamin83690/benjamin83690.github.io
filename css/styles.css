@@ -72,14 +72,21 @@ ul,ol {
 
 /*----- MENU -----*/
 
+.navbar.scrolled {
+	background-color: #dc4143;
+	border-bottom: 1px solid #fff;
+	transition: background-color linear .5s;
+}
+
 .navbar {
-    background-color: #dc4143;
+    background-color: rgb(128, 93, 93);
     font-size: 12px;
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 1px solid #fff; */
     letter-spacing: 4px;
     text-transform: uppercase;
 	font-weight: bold;
 	padding: 15px 0 0 0;
+	transition: background-color linear .5s;
 }
 
 .nav-tabs {
