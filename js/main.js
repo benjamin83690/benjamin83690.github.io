@@ -74,16 +74,22 @@ $(function(){
     	reset: true
     });
 
-    sr.reveal('.timeline-panel',{
-    	origin: 'left',
-    	distance: '80px',
-    	duration: 1000,
-    	scale: 0.4,
-    	rotate: {x:100, y:45, z:10},
-    	easing:'linear',
-    	delay: 500,
-    	reset: true
-    }, 50);
+    sr.reveal('.timeline-panel-container-inverted',{
+        origin: 'right',
+        distance: '100px',
+        duration: 2500,
+        easing:'ease',
+        delay: 500,
+        reset: true
+    });
+
+    sr.reveal('.timeline-panel-container',{
+        origin: 'left',
+        distance: '100px',
+        duration: 3500,
+        easing:'ease',
+        reset: true
+    });
 
     sr.reveal('.projet',{
     	duration: 2000,
