@@ -1,6 +1,6 @@
 /* font-family: 'Lato', sans-serif; */
 
- /*----- Général -----*/
+ /*----- GÃŠnÃŠral -----*/
 
 body {
  	font-family: 'Lato', sans-serif;
@@ -28,6 +28,7 @@ section .heading {
 section .heading h2 {
 	text-transform: uppercase;
 	padding-top: 15px;
+	text-shadow: 1px 1px 2px black;
 }
 
 ul,ol {
@@ -72,21 +73,16 @@ ul,ol {
 
 /*----- MENU -----*/
 
-.navbar.scrolled {
-	background-color: #dc4143;
-	border-bottom: 1px solid #fff;
-	transition: background-color linear .5s;
-}
-
 .navbar {
-    background-color: rgb(128, 93, 93);
+	/* background-color: rgba(88, 54, 54, 0.82); */
+	background: linear-gradient(180deg, #444, #dc4143);
     font-size: 12px;
-    /* border-bottom: 1px solid #fff; */
     letter-spacing: 4px;
     text-transform: uppercase;
 	font-weight: bold;
 	padding: 15px 0 0 0;
-	transition: background-color linear .5s;
+	border-bottom: 1px solid #fff;
+	transition: all linear .5s;
 }
 
 .nav-tabs {
@@ -110,9 +106,67 @@ ul,ol {
 	border-bottom: 1px solid #dc4143;
 }
 
+/* -------- Animations au scroll ------ */
+
+.navbar.scrolled {
+	border-bottom: 1px solid #444;
+	transition: all linear .5s;
+}
+
+.navbar.scrolled .nav-tabs .nav-item .nav-link.active {
+	border-top: 1px solid #444;
+	border-right: 1px solid #444;
+	border-left: 1px solid #444;
+}
+
+/* --IMPAIR (ROUGE)-- */
+.navbar.scrolled .nav-tabs .nav-item:nth-child(odd) .nav-link:hover {
+	background: linear-gradient(180deg, #444, #dc4143);
+	border-top: 1px solid #444;
+	border-right: 1px solid #444;
+	border-left: 1px solid #444;
+}
+.navbar.scrolled .nav-tabs .nav-item:nth-child(odd) .nav-link.active {
+	background: linear-gradient(180deg, #444, #dc4143 45%);
+}
+
+/* --PAIR (blanc)-- */
+.navbar.scrolled .nav-tabs .nav-item:nth-child(even) .nav-link:hover {
+	background: linear-gradient(180deg,#dc4143, #fff);
+	border-top: 1px solid #444;
+	border-right: 1px solid #444;
+	border-left: 1px solid #444;
+}
+.navbar.scrolled .nav-tabs .nav-item:nth-child(even) .nav-link.active {
+	background: linear-gradient(180deg,#dc4143, #fff 45%);
+}
+
+/* --PAIR (blanc)-- */
 .navbar-toggler{
     color: #fff !important;
-    border-style: none;
+	border-style: none;
+	outline-style: none;
+	transition: all linear .5s;
+}
+/* .navbar-toggler:focus, .navbar-toggler:active {
+	outline-style: none;
+	transform: rotateZ(90deg);
+} */
+
+
+@media screen AND (max-width: 700px) {
+	.navbar.scrolled .nav-tabs .nav-item:nth-child(odd) .nav-link:hover {
+		background:#dc4143;
+	}
+	.navbar.scrolled .nav-tabs .nav-item:nth-child(odd) .nav-link.active {
+		background:#dc4143;
+	}
+	.navbar.scrolled .nav-tabs .nav-item:nth-child(even) .nav-link:hover {
+		background:#fff;
+	}
+	.navbar.scrolled .nav-tabs .nav-item:nth-child(even) .nav-link.active {
+		background:#fff;
+	}
 }
 
 
@@ -125,7 +179,6 @@ ul,ol {
 
 #about img {
 	border: 1px solid #444;
-	box-shadow: 0 0px 6px 0px #0000009c;
 }
 
 .profile-picture {
@@ -148,6 +201,7 @@ ul,ol {
 
 #skills {
 	background: white;
+	padding-bottom: 10px;
 }
 
 #skills h2 {
@@ -169,6 +223,55 @@ ul,ol {
   .bte-skills {
     margin-bottom: -60px;
   }
+}
+
+
+.logo{
+	width: 140px;
+	height: 80px;
+	padding: 0.5rem;
+	margin: 10px 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo img {
+	max-width: 75%;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	transition: all .3s linear 0s;
+}
+
+.logo img:hover {
+	filter: none;
+	-webkit-filter: none; 
+}
+
+.item {
+	width: 200px;
+	height: 100px;
+}
+
+.slider {
+	overflow: hidden;
+	display: block;
+	max-width: 800px;
+	margin: 90px auto 0;
+}
+
+#slider {
+	display: flex;
+	position: relative;
+	transition: all .5s ease-out 0s;
+}
+
+@media screen AND (max-width: 759px) {
+	.item {
+		width: 180px;
+	}
+	.logo {
+		margin: 10px 25px;
+	}
 }
 
 /*-------- EXPERIENCE ------*/
@@ -375,15 +478,20 @@ ul,ol {
 	font-style: italic;
 }
 
+.educ {
+	margin-bottom: 15px;
+}
+
 .education-block {
-	width: 84%;
+	/* width: 84%; */
 	margin: 0 auto;
 	text-align: center;
-	padding: 30px;
+	padding: 1rem;
 	background: #ddd;
 	border-radius: 10px;
 	border: 2px solid #ccc;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
+	height: 100%;
 }
 
 .education-block h5 {
