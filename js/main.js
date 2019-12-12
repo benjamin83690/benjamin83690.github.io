@@ -1,11 +1,46 @@
-$(function () {
+let boiteSlider = document.querySelector('.slider');
+let slider = document.querySelector('#slider');
+let images = document.querySelectorAll('#slider img');
+let boites = document.querySelectorAll('#slider .item');
+let uneBoite = document.querySelector('#slider .item');
+let longueurImages = (uneBoite.offsetWidth * boites.length - (4 * uneBoite.offsetWidth)) + 1;
+let ref = 0;
+let activeSlide;
+
+function slide() {
+    if (ref > -longueurImages) {
+        ref -= uneBoite.offsetWidth;
+        slider.style.left = ref + "px";
+    } 
+    if (ref <= -longueurImages) {
+        ref = 0;
+        slider.style.left = "0px";
+    }
+}
+
+function slideOn() {
+    activeSlide = window.setInterval(slide,6000);
+}
+
+function slideOff() {
+    activeSlide = window.clearInterval(activeSlide);
+}
+
+window.onload = () => {
+    slideOn();
+    slider.addEventListener('mouseover', slideOff);
+    slider.addEventListener('mouseleave', slideOn);
+}
+
+
+$(function(){
+
+    $('[data-toggle="tooltip"]').tooltip()
+
     $(document).scroll(function () {
         var $nav = $("#mainNav");
         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     });
-});
-
-$(function(){
 
     $(".navbar a, footer a").on("click", function(event){
     
@@ -30,7 +65,7 @@ $(function(){
                  
                 if(json.isSuccess) 
                 {
-                    $('#contact-form').append("<p class='thank-you'>Votre message a bien été envoyé. Merci de m'avoir contacté :)</p>");
+                    $('#contact-form').append("<p class='thank-you'>Votre message a bien Ã©tÃ© envoyÃ©. Merci de m'avoir contactÃ© :)</p>");
                     $('#contact-form')[0].reset();
                 }
                 else
@@ -51,10 +86,7 @@ $(function(){
     	origin: 'left',
     	distance: '100px',
     	duration: 2000,
-    	// scale: 0.4,
-    	// rotate: {x:180, y:45, z:20},
     	easing:'ease',
-    	// reset: true
     });
 
     sr.reveal('.rounded-circle',{
@@ -62,9 +94,7 @@ $(function(){
     	distance: '100px',
     	duration: 2000,
     	scale: 0.4,
-    	// rotate: {x:180, y:45, z:20},
     	easing:'ease',
-    	// reset: true
     });
 
     sr.reveal('.heading',{
@@ -83,17 +113,16 @@ $(function(){
 
     sr.reveal('.timeline-panel-container-inverted',{
         origin: 'right',
-        distance: '100px',
-        duration: 2500,
+        distance: '20px',
+        duration: 2000,
         easing:'ease',
-        delay: 500,
         reset: true
     });
 
     sr.reveal('.timeline-panel-container',{
         origin: 'left',
-        distance: '100px',
-        duration: 3500,
+        distance: '20px',
+        duration: 2000,
         easing:'ease',
         reset: true
     });
@@ -119,8 +148,4 @@ $(function(){
     });
 
 })
-
-$(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
 
